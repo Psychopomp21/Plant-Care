@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Reminder App</title>
+  
+</head>
+<style>
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  background: url(bg.png);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 5;
+}
+
+.logo {
+  max-width: 50%;
+  height: auto; /* Responsive image */
+}
+
+.button-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px; /* Optional: Add space from the bottom */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1c6f0a;
+}
+
+
+</style>
+<body><div class="container">
+    <div class="logo-container">
+      <img src="download-modified.png" alt="Logo" class="logo">
+    </div>
+    <div class="button-container">
+      
+      <button id="myButton" onclick="navigateToNextPage()">Proceed</button>
+      <a href="index.html"></a>
+    </div>
+  </div>
+  <script>
+    function navigateToNextPage() {
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>

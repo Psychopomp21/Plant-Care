@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Reminder App</title>
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+  <div class="container">
+    <h1>Plant Reminder </h1>
+    <label for="reminder-time">Set Reminder Time:</label>
+    <input type="time" id="reminder-time">
+    <label for="default-reminder">Set as Default Reminder:</label>
+    <input type="checkbox" id="default-reminder">
+    <button id="set-reminder">Set Reminder</button>
+  </div>
+  <div class="container">
+    <h1>Plant Journal</h1>
+    <div class="add-plant">
+      <h2>Add New Plant</h2>
+      <input type="text" id="plantName" placeholder="Plant Name">
+      <input type="file" id="plantImage">
+      <button onclick="addPlant()">Add Plant</button>
+    </div>
+    <div class="plant-list">
+      <h2>Plant List</h2>
+      <ul id="plantList"></ul>
+    </div>
+  </div>
+
+  <!-- Modal for adding images to existing plant -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalPlantName"></h2>
+      <input type="file" id="modalPlantImage">
+      <button onclick="addImageToPlant()">Add Image</button>
+      <div id="modalPlantImages"></div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
